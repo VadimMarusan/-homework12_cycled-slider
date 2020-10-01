@@ -1,0 +1,33 @@
+img {
+    object-fit: cover;
+
+}
+
+.slide-to-show {
+    width: 800px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+
+.images-wrapper {
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+
+
