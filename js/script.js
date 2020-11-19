@@ -22,7 +22,7 @@ play.onclick = function playSlider() {
     play.setAttribute("disabled", "disabled")
 }
 
-/*
+
 function timer (){
     let timeLeft = document.querySelector(".display");
     let currentTime = parseInt(timeLeft.innerHTML);
@@ -30,10 +30,19 @@ function timer (){
             if (--currentTime >= 0) { // если таймер всё еще больше нуля
                 timeLeft.innerHTML = currentTime // обновляем цифру
             }
+        if (currentTime == 0) {
+            timeLeft.innerHTML = "3";
+            timer();
+        }
         }, 1000)
 
+
 }
-timer(); */
+
+timer();
+
+
+
 
 
 
