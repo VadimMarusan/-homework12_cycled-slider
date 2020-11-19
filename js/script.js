@@ -14,10 +14,12 @@ function nextSlide(){
 
 pause.onclick = function pauseSlider () {
     clearInterval(slideInterval);
+    play.removeAttribute("disabled")
 }
 
 play.onclick = function playSlider() {
     slideInterval = setInterval(nextSlide,3000);
+    play.setAttribute("disabled", "disabled")
 }
 
 /*
